@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+
+}
+
+body{
+    
+    background-color: darkgrey;
+}
+
+.mainContainer{
+    display:grid;
+}
+
+.formContent{
+   
+    color: white;
+    background-color: #24292F;
+    border: 8px solid;
+    text-align: center;
+    position: relative;
+    
+    
+
+    
+
+
+
+}
