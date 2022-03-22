@@ -45,7 +45,7 @@
            
         <div class="div" id="d-telefone">
             <label for="telefone"> telefone: </label> <br>
-            <input type="tel" id="telefone" value = "(  ) _____-____"> <br>
+            <input type="tel" id="telefone" value = "+ 55 (  ) _____-____"> <br>
         </div>
            
         <div class="div" id="d-sexo">
@@ -63,7 +63,7 @@
         </div>
            
         <div class="div" id="d-botao">
-            <input type="submit" value="Concluído" id="botao">
+            <input type="submit" value="Concluído" id="botao" onclick="mostrarMensagem()">
         </div>
 
 
@@ -74,7 +74,29 @@
 
 </div>
 
-<footer></footer>
+<script>
+
+    var nome = document.getElementById("nome")
+    var email_1 = document.getElementById("email_1")
+    var email_2 = document.getElementById("email_2")
+    var senha_1 = document.getElementById("senha_1")
+    var semha_2 = document.getElementById("senha_2")
+    var tel = document.getElementById("telefone")
+    var sex = document.getElementById("sexo")
+    var data = document.getElementById("data")
+
+
+    mostrarMensagem() {
+        window.alert("seus dados serão armazenados :D")
+    }
+
+
+
+    
+
+
+
+</script>
 
 </body>
 </html>
