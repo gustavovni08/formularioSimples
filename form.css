@@ -1,27 +1,177 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
 
 }
+.backgroundconteiner{
 
-body{
-    
 
-}
-
-.mainContainer{
-    display:grid;
-}
-
-.formContent{
+    width: 110vw;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #f1f1f1;
+    border: solid;
+    border: hidden;
    
 
     
+
+}
+
+#circulo-um{
+
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    top: 15%;
+    left: 3%;
+
+}
+
+#circulo-dois{
+
+    width: 25px;
+    height: 25px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+    top: 15%;
+    left: 5%;
+
+}
+#circulo-tres{
+
+    width: 25px;
+    height: 25px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    position: relative;
+    top: 15%;
+    left: 7%;
+
+}
+
+.header{
+
+    display: flex;
+
+    width: 400px;
+    height: 80px;
+    align-items: baseline;
+    align-content: flex-start;
+    position: relative;
     
+    left: 5px;
 
+}
+
+h1{
+    position: relative;
+    top: 15%;
+    left: 9%;
+}
+
+.form{
     
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 480px;
+    width: 716px;
+    border: 8px hidden;
+    position: relative;
+    top: 5px;
+    left: 8%px;
+    background-color: #ffff;
+    border-radius: 1%;
+
+}
 
 
+label{
+    position: relative;
+    top: 15%;
+    left: 8%;
+}
 
+input{
+    position: relative;
+    top: 15%;
+    left: 8%;
+    width: 200px;
+
+}
+
+select{
+    position: relative;
+    top: 15%;
+    left: 8%;
+}
+
+#botao{
+
+    width: 257px ;
+    height: 50px ;
+    border-style: hidden;
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+    position: relative;
+    top: 35%;
+    left: 0%;
+    border-radius: 50px ;
+}
+
+#d-nome{
+
+    width: 400px;
+    height: 80px;
+    
+}
+
+
+#d-email{
+
+    width: 400px;
+    height: 150px;
+}
+
+#d-senha{
+
+    width: 400px;
+    height: 150px;
+}
+
+#d-telefone{
+
+    width: 400px;
+    height: 84px;
+}
+
+#d-sexo{
+
+    height: 100px ;
+}
+
+#d-data{
+
+    height: 200px;
+}
+
+#d-botao{
+
+    height: 164px;
+}
+
+body{
+
+    background-color: gray;
 }

@@ -10,39 +10,71 @@
 </head>
 <body>
 
- <div class = "mainContainer">
- 
-    <div class="formContent">
-        <form>
-            <label for="nome"> nome: </label> <br>
+
+<div class = "backgroundconteiner">
+
+
+    <div class="header">
+        <div id ="circulo-um" class="hi"></div>
+        <div id ="circulo-dois" class="h1"></div>
+        <div id ="circulo-tres" class="hi"></div>
+        <h1 class="hi">Crie sua conta.</h1>
+    </div>
+
+
+    <form class="form">
+          
+     <div class="div" id="d-nome">
+            <label for="nome"> nome completo: </label> <br>
             <input type="text" id = "nome"> <br>
+        </div>
+           
+        <div class="div" id="d-email">
             <label for="email_1"> email: </label> <br>
             <input type="email" id = "email_1" > <br>
             <label for="email_2"> confirme seu email: </label> <br>
             <input type= "email" id = "email_2"> <br>
+        </div>
+           
+        <div class="div" id="d-senha" >
             <label for="senha_1"> digite a sua senha: </label> <br>
             <input type="password" id = "senha_1" > <br>
             <label for="senha_2"> confirme sua senha: </label> <br>
-            <input type= "password" id = "senha_2"> <br>
-
-            
-
+        <input type= "password" id = "senha_2"> <br>
+        </div>
+           
+        <div class="div" id="d-telefone">
             <label for="telefone"> telefone: </label> <br>
-            <input type="number" id="telefone"> <br>
+            <input type="tel" id="telefone" value = "(  ) _____-____"> <br>
+        </div>
+           
+        <div class="div" id="d-sexo">
             <label for="sexo"> sexo: </label> <br>
             <select id="sexo">
                 <option value="masculino">masculino</option>
                 <option value="feminino">femenino</option>
                 <option value="outro">outro</option> 
             </select> <br>
+        </div>
+           
+        <div class="div" id="d-data">
             <label for="data"> data de nascimento: </label> <br>
             <input type = "date" id="data" > <br>
+        </div>
+           
+        <div class="div" id="d-botao">
+            <input type="submit" value="Concluído" id="botao">
+        </div>
 
-            <input type="submit" value="enviar!">
-            
+
         </form>
-    </div>
- </div>
+
     
+    </div>
+
+</div>
+
+<footer></footer>
+
 </body>
 </html>
