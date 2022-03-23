@@ -21,7 +21,6 @@
         <h1 class="hi">Crie sua conta.</h1>
     </div>
 
-
     <form class="form">
           
      <div class="div" id="d-nome">
@@ -32,15 +31,21 @@
         <div class="div" id="d-email">
             <label for="email_1"> email: </label> <br>
             <input type="email" id = "email_1" > <br>
+           
             <label for="email_2"> confirme seu email: </label> <br>
             <input type= "email" id = "email_2"> <br>
+            
         </div>
            
-        <div class="div" id="d-senha" >
+        <div class="div" id="d-senha">
             <label for="senha_1"> digite a sua senha: </label> <br>
-            <input type="password" id = "senha_1" > <br>
+            <input type="password" id = "senha_1" onmouseenter= "exibir()"  onmouseout="esconder()" > <br>
+            
             <label for="senha_2"> confirme sua senha: </label> <br>
-        <input type= "password" id = "senha_2"> <br>
+        <input type= "password" id = "senha_2" onmouseenter= "exibir()"  onmouseout="esconder()"> <br>
+        
+        <p class="hidden">sua senha deve conter caracteres em maiusculo,    minusculo e numerais.</p>
+
         </div>
            
         <div class="div" id="d-telefone">
@@ -63,40 +68,24 @@
         </div>
            
         <div class="div" id="d-botao">
-            <input type="submit" value="Concluído" id="botao" onclick="mostrarMensagem()">
+            <input type="submit" value="Concluído" id="botao" onclick="checar()">  
+            
         </div>
-
-
+        
+        
+        <div class="div" id="d-termos">
+            <input type= "checkbox" id="termos" value="False" onclick="turnToTrue()"> 
+            <p style="font-size: 11px;">aceito os <a href="https://xvideos.com">termos</a> e condições </p>
+        </div>  
+        
         </form>
-
     
     </div>
 
 </div>
 
-<script>
 
-    var nome = document.getElementById("nome")
-    var email_1 = document.getElementById("email_1")
-    var email_2 = document.getElementById("email_2")
-    var senha_1 = document.getElementById("senha_1")
-    var semha_2 = document.getElementById("senha_2")
-    var tel = document.getElementById("telefone")
-    var sex = document.getElementById("sexo")
-    var data = document.getElementById("data")
-
-
-    mostrarMensagem() {
-        window.alert("seus dados serão armazenados :D")
-    }
-
-
-
-    
-
-
-
-</script>
+<script type ="text/javascript" src="form.js"></script>
 
 </body>
 </html>
