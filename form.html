@@ -25,32 +25,36 @@
           
      <div class="div" id="d-nome">
             <label for="nome"> nome completo: </label> <br>
-            <input type="text" id = "nome"> <br>
+            <input type="text" id = "nome" required > <br>
         </div>
            
         <div class="div" id="d-email">
             <label for="email_1"> email: </label> <br>
-            <input type="email" id = "email_1" > <br>
+            <input type="email" id = "email_1" required > <br>
            
             <label for="email_2"> confirme seu email: </label> <br>
-            <input type= "email" id = "email_2"> <br>
+            <input type= "email" id = "email_2" required > <br>
             
         </div>
            
         <div class="div" id="d-senha">
             <label for="senha_1"> digite a sua senha: </label> <br>
-            <input type="password" id = "senha_1" onmouseenter= "exibir()"  onmouseout="esconder()" > <br>
+            <input type="password" id = "senha_1" onmouseenter= "exibir()"  onmouseout="esconder()" required > <br>
             
             <label for="senha_2"> confirme sua senha: </label> <br>
-        <input type= "password" id = "senha_2" onmouseenter= "exibir()"  onmouseout="esconder()"> <br>
+            <input type= "password" id = "senha_2" onmouseenter= "exibir()"  onmouseout="esconder()" required > <br>
         
-        <p class="hidden">sua senha deve conter caracteres em maiusculo,    minusculo e numerais.</p>
+             <p class="hidden">sua senha deve conter caracteres em maiusculo,    minusculo e numerais.</p>
 
         </div>
            
         <div class="div" id="d-telefone">
             <label for="telefone"> telefone: </label> <br>
-            <input type="tel" id="telefone" value = "+ 55 (  ) _____-____"> <br>
+            <input type="tel" id="telefone" >
+            <script> 
+
+            </script> <br>
+           
         </div>
            
         <div class="div" id="d-sexo">
@@ -64,7 +68,7 @@
            
         <div class="div" id="d-data">
             <label for="data"> data de nascimento: </label> <br>
-            <input type = "date" id="data" > <br>
+            <input type = "date" id="data" required> <br>
         </div>
            
         <div class="div" id="d-botao">
@@ -74,7 +78,7 @@
         
         
         <div class="div" id="d-termos">
-            <input type= "checkbox" id="termos" value="False" onclick="turnToTrue()"> 
+            <input type= "checkbox" id="termos" required > 
             <p style="font-size: 11px;">aceito os <a href="https://xvideos.com">termos</a> e condições </p>
         </div>  
         
@@ -84,8 +88,23 @@
 
 </div>
 
+<script>
+    new Cleave( '#telefone', {
+
+        delimetrs: ['()','-'],
+        blocks:[0, 2, 5, 4 ],
+        
+
+
+    })
+
+
+
+</script>
+
 
 <script type ="text/javascript" src="form.js"></script>
+<script type="text/javascript" src= "https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
 
 </body>
 </html>
